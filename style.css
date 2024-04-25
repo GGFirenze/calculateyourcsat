@@ -75,8 +75,8 @@ button:hover {
 
 #clear {
     padding: 2%;
-    width: 7%;
-    height: 15%;
+    width: 7px;
+    height: 10px;
     bottom: 5%;
     right: 5%;
     background-color: #FF6F61;
