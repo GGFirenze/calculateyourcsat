@@ -16,7 +16,7 @@
 
 .calculator {
     display: flex;
-    background-image: linear-gradient(rgba(227,249,255,0.85),rgba(227,249,255,0.85)), url("/Users/giuliano.giannini/Desktop/calculate CSAT percentage/Ampacademy.png");
+    background-image: linear-gradient(rgba(227,249,255,0.85),rgba(227,249,255,0.85)), url("Ampacademy.png");
     justify-content: space-between;
     width: 60%;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
