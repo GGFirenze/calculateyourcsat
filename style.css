@@ -75,11 +75,10 @@ button:hover {
 
 #clear {
     padding: 2%;
-    width: 30px;
+    width: 50px;
     height: 20px;
     bottom: 5%;
     right: 5%;
-    text-align: center;
     background-color: #FF6F61;
     position: absolute;
     justify-content: center;
