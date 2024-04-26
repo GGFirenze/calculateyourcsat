@@ -73,7 +73,7 @@ button:hover {
     background-color: #45a049;
 }
 
-#clear {
+button #clear {
     padding: 2%;
     width: 50px;
     height: 20px;
