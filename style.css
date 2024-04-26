@@ -74,15 +74,16 @@ button:hover {
 }
 
 #clear {
-padding: 2px;
-width: 30%;
-height: 10%;
-bottom: 10px;
-right: 30px;
-background-color: #FF6F61;
-justify-content: center;
-align-items: center;
-border-radius: 10%;
+    padding: 2px;
+    width: 7%;
+    height: 10%;
+    bottom: 10px;
+    right: 30px;
+    background-color: #FF6F61;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
   
 .output {
