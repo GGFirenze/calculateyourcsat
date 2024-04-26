@@ -74,12 +74,15 @@ button:hover {
 }
 
 #clear {
-    text-align: center;
-    line-height: 20px;
-    width: 50px;
-    height: 20px;
-    bottom: 5%;
-    right: 5%;
+    width: 100px; /* Larghezza sufficiente per contenere il testo "Clear!" */
+    height: 40px; /* Altezza sufficiente per contenere il testo */
+    background-color: #FF6F61;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    text-align: center; /* Centra il testo orizzontalmente */
+    line-height: 40px; /* Centra il testo verticalmente */
+    margin-top: 20px; /* Aggiungi spazio sopra il pulsante */
     background-color: #FF6F61;
     border-radius: 50%;
 }
