@@ -38,9 +38,10 @@ h2 {
 #titolo {
     position: absolute;
     top: 15%;
-    left: 545px;
+    left: 28%;
     margin: 0;
     padding: 20px;
+    z-index: 1;
 }
 
 label {
