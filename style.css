@@ -80,9 +80,6 @@ button:hover {
     bottom: 5%;
     right: 5%;
     background-color: #FF6F61;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
     border-radius: 30%;
 }
 
