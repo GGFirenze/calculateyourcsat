@@ -47,6 +47,10 @@ label {
     margin-bottom: 5px;
 }
 
+label[for="csatPercentage"] {
+    margin-top: 10px;
+}
+
 input[type="number"] {
     width: calc(30% - 24px);
     border: 1;
