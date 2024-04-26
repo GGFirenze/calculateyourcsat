@@ -90,6 +90,8 @@ button:hover {
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    overflow: hidden:
+    text-overflow: ellipsis;
 }
 
 #clear:hover {
