@@ -84,7 +84,7 @@ button:hover {
     position: absolute;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    border-radius: 30%;
 }
 
 .output {
