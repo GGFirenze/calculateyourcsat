@@ -149,7 +149,22 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
 </h3>
 		</div>
 		<div class="box">
-			<h3><a href"#">Tech Trainer - 10-star Eval.</a></h3>
+			<h3><a href"https://ggfirenze.github.io/csat10stars/csat10stars.html" id="10stars">Tech Trainer - 10-star Eval.</a>
+						<script type="text/javascript">
+
+ var tenCsat = document.getElementById('10stars');
+
+   // Add a click event listener to the link
+  tenCsat.addEventListener('click', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('10star_csat_clicked', {debug: true})
+    var eventProperties = {
+    	source : "homepage"
+    }
+          amplitude.track('10star_csat_clicked', eventProperties);
+    });
+  </script>
+</h3>
 		</div>
 	</div>
 	</section>
