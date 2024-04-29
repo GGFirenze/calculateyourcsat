@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="with=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" type="x-icon" href="/Users/giuliano.giannini/Desktop/CSAT 2.0/Calcsat Logo1 copy 2.png">
+<title>Calculate Your CSAT!</title>
+<link rel="stylesheet" href="/Users/giuliano.giannini/Desktop/calculate CSAT percentage/homepage.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/914b751213.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="homepage.html"><img src="/Users/giuliano.giannini/Desktop/calculate CSAT percentage/Calcsat Logo1.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">HOME</a></li>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">HOW</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa-solid fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+<div class="text-box">
+	<h1>Calculate Your CSAT!</h1>
+	<p>Is it the end of the month or, worse, of another quarter, and you are far out at sea with calculating your CSAT %? Don't sweat it, type it!</p>
+	<br>
+	<p>Click on the square that best represents your role, read the instructions that will appear on screen, and start calculating your CSAT.</p>
+	<a href="#rolesSect" class="hero-btn">Start Now!</a>
+		</div>
+	</section>
+
+	<!--Role Widgets-->
+
+	<section class="roles">
+		<div class="rolesTitle">
+			<h2>Which widget best describes your role?</h2>
+		</div>
+		<div class="boxes">
+		<div class="box">
+			<h3><a href="/Users/giuliano.giannini/Desktop/calculate CSAT percentage/csatpercentage.html">Tech Trainer - 5-star Eval.</a></h3>
+		</div>
+		<div class="box" >
+			<h3><a href="/Users/giuliano.giannini/Desktop/CSAT 2.0/csatpercentage.html">Tech Trainer - 5-star Eval. Simplified</a></h3>
+		</div>
+		<div class="box">
+			<h3>Tech Trainer - 10-star Eval.</h3>
+		</div>
+	</div>
+	</section>
+
+	<!--33:50min video https://www.youtube.com/watch?v=oYRda7UtuhA -->
+	
+<!--JavaScript for Toggle Menu-->
+
+	<script type="text/javascript">
+
+		var navLinks = document.getElementById("navLinks");
+
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu() {
+			navLinks.style.right = "-200px";
+		}
+
+  		document.querySelector('.hero-btn').addEventListener('click', function(event) {
+    	event.preventDefault();
+    const targetId = this.getAttribute('href').substring(1); // Get the ID of the target section
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      const offsetTop = targetSection.offsetTop; // Get the top position of the target section
+      window.scroll({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  });
+	</script>
+</body>
+</html>
