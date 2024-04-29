@@ -7,7 +7,7 @@
 .header {
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("/Users/giuliano.giannini/Desktop/calculate CSAT percentage/IMG_20240421_103259.jpg");
+	background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("IMG_20240421_103259.jpg");
 	background-position: center;
 	background-size: cover;
 	position: relative;
@@ -145,7 +145,7 @@ nav .fa-solid {
 	padding-top: 100px;
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("/Users/giuliano.giannini/Desktop/calculate CSAT percentage/pixelcut-export.jpeg");
+	background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("pixelcut-export.jpeg");
 	background-position: center;
 	background-size: cover;
 	position: relative;
