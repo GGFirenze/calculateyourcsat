@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #e3f9ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(227, 249, 255, 0.85), rgba(227, 249, 255, 0.85)), url("/Users/giuliano.giannini/Desktop/CSAT 2.0/Ampacademy copy.png");
+    justify-content: space-between;
+    width: 60%;
+    max-width: 800px;
+    height: 45%;
+    border-radius: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative; 
+}
+
+.section {
+    margin: 20px 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputdata {
+    margin: 10px;
+    width: 60%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: center; /* Center align the labels */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+input[type="number"] {
+    width: 60%;
+    border: none;
+    outline: 0;
+    left: 50%;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+input.zinnalova {
+    width: 36%;
+}
+
+button {
+    width: 40%;
+    padding: 8px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#clear {
+    width: 80px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding: 8px;
+    background-color: #FF6F61;
+    color: white;
+    border-radius: 10%; /* Adjust border-radius as needed */
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 10px;
+}
+
+
+
+
+
