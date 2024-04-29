@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <link rel="shortcut icon" type="x-icon" href="/Users/giuliano.giannini/Desktop/CSAT 2.0/Calcsat Logo1 copy 2.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="https://cdn.amplitude.com/libs/amplitude-8.21.4-min.gz.js"></script>
+<script type="text/javascript">
+!function(){"use strict";!function(e,t){var r=e.amplitude||{_q:[],_iq:{}};if(r.invoked)e.console&&console.error&&console.error("Amplitude snippet has been loaded.");else{var n=function(e,t){e.prototype[t]=function(){return this._q.push({name:t,args:Array.prototype.slice.call(arguments,0)}),this}},s=function(e,t,r){return function(n){e._q.push({name:t,args:Array.prototype.slice.call(r,0),resolve:n})}},o=function(e,t,r){e._q.push({name:t,args:Array.prototype.slice.call(r,0)})},i=function(e,t,r){e[t]=function(){if(r)return{promise:new Promise(s(e,t,Array.prototype.slice.call(arguments)))};o(e,t,Array.prototype.slice.call(arguments))}},a=function(e){for(var t=0;t<g.length;t++)i(e,g[t],!1);for(var r=0;r<m.length;r++)i(e,m[r],!0)};r.invoked=!0;var c=t.createElement("script");c.type="text/javascript",c.integrity="sha384-BHj/6N+ZSiRDYRUHPEqr/nwkUsSk3s9r1ryQeFBc4x2OiVz4peW3jSccKZsoU8Ry",c.crossOrigin="anonymous",c.async=!0,c.src="https://cdn.amplitude.com/libs/analytics-browser-2.6.2-beta.0-min.js.gz",c.onload=function(){e.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};var u=t.getElementsByTagName("script")[0];u.parentNode.insertBefore(c,u);for(var l=function(){return this._q=[],this},p=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove","getUserProperties"],d=0;d<p.length;d++)n(l,p[d]);r.Identify=l;for(var f=function(){return this._q=[],this},v=["getEventProperties","setProductId","setQuantity","setPrice","setRevenue","setRevenueType","setEventProperties"],y=0;y<v.length;y++)n(f,v[y]);r.Revenue=f;var g=["getDeviceId","setDeviceId","getSessionId","setSessionId","getUserId","setUserId","setOptOut","setTransport","reset","extendSession"],m=["init","add","remove","track","logEvent","identify","groupIdentify","setGroup","revenue","flush"];a(r),r.createInstance=function(e){return r._iq[e]={_q:[]},a(r._iq[e]),r._iq[e]},e.amplitude=r}}(window,document)}();
+
+amplitude.init('54b017196da04bf7e947809fd2a8c275', {
+    defaultTracking: {
+          attribution: true,
+          pageViews: true,
+          sessions: true,
+          formInteractions: true,
+          fileDownloads: true,
+          buttonClicked: true,
+          elementClicked: true
+    },
+    });
+</script>
+
+<script>
+    function loadAsync(src, callback) {
+      var script = document.createElement('script');
+      script.src = src;
+      if (script.readyState) { // IE, incl. IE9
+        script.onreadystatechange = function() {
+            if (script.readyState === "loaded" || script.readyState === "complete") {
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+      } else {
+        script.onload = function() { // Other browsers
+            callback();
+        };
+      }
+      document.getElementsByTagName('head')[0].appendChild(script);
+    }
+
+    loadAsync("https://cdn.amplitude.com/libs/plugin-session-replay-browser-0.8.1-min.js.gz", 
+      function () {
+        window.amplitude.add(window.sessionReplay.plugin({sampleRate: 1}));
+    });
+
+</script>
+
+    <title>CSAT Calculator</title>
+    <link rel="stylesheet" href="/Users/giuliano.giannini/Desktop/calculate CSAT percentage/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titolo">Calculate your CSAT seamlessly</h2>
+        <div class="calculator">
+            <div class="section">
+                <h2>Total Stars Obtained</h2>
+                <div>
+                    <label for="star1">1 Star:</label>
+                    <input type="number" id="star1" class="star-input">
+ <script type="text/javascript">
+
+ var stellauno = document.getElementById('star1');
+
+   // Add a click event listener to the link
+  stellauno.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('1_selected', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('1_selected', eventProperties);
+    });
+  </script>
+                </div>
+                <div>
+                    <label for="star2">2 Stars:</label>
+                    <input type="number" id="star2" class="star-input">
+                     <script type="text/javascript">
+
+ var stelladue = document.getElementById('star2');
+
+   // Add a click event listener to the link
+  stelladue.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('2_selected', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('2_selected', eventProperties);
+    });
+  </script>
+                </div>
+                <div>
+                    <label for="star3">3 Stars:</label>
+                    <input type="number" id="star3" class="star-input">
+                     <script type="text/javascript">
+
+ var stellatre = document.getElementById('star3');
+
+   // Add a click event listener to the link
+  stellatre.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('3_selected', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('3_selected', eventProperties);
+    });
+  </script>
+                </div>
+                <div>
+                    <label for="star4">4 Stars:</label>
+                    <input type="number" id="star4" class="star-input">
+                     <script type="text/javascript">
+
+ var stellaquattro = document.getElementById('star4');
+
+   // Add a click event listener to the link
+  stellaquattro.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('4_selected', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('4_selected', eventProperties);
+    });
+  </script>
+                </div>
+                <div>
+                    <label for="star5">5 Stars:</label>
+                    <input type="number" id="star5" class="star-input">
+                     <script type="text/javascript">
+
+ var stellacinque = document.getElementById('star5');
+
+   // Add a click event listener to the link
+  stellacinque.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('5_selected', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('5_selected', eventProperties);
+    });
+  </script>
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="totStars">Total Obtained:</label>
+                    <output id="obtained"></output>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Total Surveys</h2>
+                <div>
+                    <label for="totalParticipants">Total Surveys:</label>
+                    <input type="number" id="totalParticipants">
+<script type="text/javascript">
+
+ var totSurveys = document.getElementById('totalParticipants');
+
+   // Add a click event listener to the link
+  totSurveys.addEventListener('change', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('tot_surveys_completed', {debug: true})
+       var eventProperties = {
+      value: this.value
+    };
+
+          amplitude.track('tot_surveys_completed', eventProperties);
+    });
+  </script>
+                </div>
+                <div>
+                    <label for="maxCSAT">Max CSAT:</label>
+                    <output id="maxCSAT"></output>
+                </div>
+            </div>
+            <div class="section">
+                <h2>CSAT Calculation</h2>
+                <button id="calculateTotal" onclick="calculateTotal()">Calculate CSAT</button>
+                <script type="text/javascript">
+
+ var csat = document.getElementById('totalParticipants');
+
+   // Add a click event listener to the link
+  csat.addEventListener('click', function(event) {
+    // Track the link click event with Amplitude and pass additional properties
+    amplitude.getInstance().logEvent('csat_calc_clicked', {debug: true})
+
+          amplitude.track('csat_calc_clicked');
+    });
+  </script>
+                <div>
+                    <label for="csatPercentage">CSAT Percentage:</label>
+                    <output id="csatPercentage"></output>
+                </div>
+            </div>
+                 <div>
+                <button id="clear">Restart!</button>
+    <script type="text/javascript">
+        // Function to clear the screen
+        function clearScreen() {
+            // Clear the values of all input fields
+            document.querySelectorAll('input[type="number"]').forEach(function(input) {
+                input.value = '';
+            });
+
+            // Clear the content of the output elements
+            document.querySelectorAll('output').forEach(function(output) {
+                output.textContent = '';
+            });
+        }
+
+        // Add an event listener to the clear button
+        document.getElementById('clear').addEventListener('click', function() {
+            // Call the clearScreen function when the button is clicked
+            clearScreen();
+            amplitude.track('calc_restarted');
+        });
+    </script>
+</div>
+        </div>
+    </div>
+    <script>
+        function calculateTotal() {
+            let star1 = parseInt(document.getElementById('star1').value) || 0;
+            let star2 = parseInt(document.getElementById('star2').value) || 0;
+            let star3 = parseInt(document.getElementById('star3').value) || 0;
+            let star4 = parseInt(document.getElementById('star4').value) || 0;
+            let star5 = parseInt(document.getElementById('star5').value) || 0;
+
+            star1 *= 1;
+            star2 *= 2;
+            star3 *= 3;
+            star4 *= 4;
+            star5 *= 5;
+
+            const totalStars = star1 + star2 + star3 + star4 + star5;
+            document.getElementById('obtained').textContent = totalStars;
+
+            const totalParticipants = parseInt(document.getElementById('totalParticipants').value) || 0;
+            const maxCSAT = totalParticipants * 5;
+            document.getElementById('maxCSAT').textContent = maxCSAT;
+
+            const csatPercentage = (totalStars / maxCSAT) * 100 || 0;
+            document.getElementById('csatPercentage').textContent = csatPercentage.toFixed(2) + "%";
+        }
+    </script>
+</body>
+</html>
