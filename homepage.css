@@ -132,14 +132,6 @@ nav .fa-solid {
 
 /*Role Widgets*/
 
-.boxes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 10%;
-
-}
-
 .roles {
 	text-align: center;
 	padding-top: 100px;
@@ -149,31 +141,34 @@ nav .fa-solid {
 	background-position: center;
 	background-size: cover;
 	position: relative;
+	color: #fff;
 }
 
-.rolesTitle h2 {
-color: #fff;
-margin-top: 5%;
-margin-bottom: 5%;
+.boxes {
+    margin-top: 10%;
+	display: flex;
+	justify-content: space-between;
+
 }
 
 .box {
-	flex-grow: 1;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	margin-inline: 200px;
 }
 
 
 .box h3 {
-	margin-inline: 70px;
-	gap: 1em;
 	color: #fff;
-	margin-top: 10%;
+	background: rgba(42,42,42,0.5);
 	border: 1px solid #fff;
 	border-radius: 10px;
-	padding: 5%;
+	padding: 35px;
 }
 
 .box h3:hover {
@@ -184,6 +179,52 @@ margin-bottom: 5%;
 
 .box h3 a {
 	color: #fff;
+}
+
+/*sezione ABOUT*/
+
+.about {
+	padding-top: 100px;
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30, 0.7), rgba(4,9,30,0.7)), url("about_bkground.jpg");;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	text-align: center;
+}
+
+.about h2 {
+	padding-top: 5%;
+}
+
+.row-about {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-col h3{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.about-col {
+	flex-basis: 31%;
+	background: rgba(42,42,42,0.5);
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	margin-inline: 200px;
+	text-align: justify;
+}
+
+.about-col a {
+	color: #81dfde;
 }
 
 
