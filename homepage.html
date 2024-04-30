@@ -77,7 +77,7 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
 				<i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="">HOME</a></li>
-					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#about" class="aboutnav" id="aboutnav">ABOUT</a></li>
 					<li><a href="">HOW</a></li>
 					<li><a href="">CONTACT</a></li>
 				</ul>
@@ -252,7 +252,31 @@ const targetSection = document.getElementById(targetId);
       });
     }
   });
-		
+
+         document.querySelector('.aboutnav').addEventListener('click', function(event) {
+      event.preventDefault();
+    const targetId = this.getAttribute('href').substring(1); // Get the ID of the target section
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      const offsetTop = targetSection.offsetTop; // Get the top position of the target section
+      window.scroll({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  });
+
+ var aboutnavClick = document.getElementById('aboutnav');
+
+  aboutnavClick.addEventListener('click', function(event) {
+
+  amplitude.getInstance().logEvent('about_nav_clicked', {debug: true})
+  var eventProperties = {
+      source : "homepage",
+      section: "nav"
+    }
+          amplitude.track('about_nav_clicked', eventProperties);
+    });
 	</script>
 </body>
 </html>
