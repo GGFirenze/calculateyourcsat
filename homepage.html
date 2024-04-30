@@ -77,7 +77,7 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
 				<i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
 				<ul>
 					<li><a href="">HOME</a></li>
-					<li><a href="">ABOUT</a></li>
+					<li><a href="#about">ABOUT</a></li>
 					<li><a href="">HOW</a></li>
 					<li><a href="">CONTACT</a></li>
 				</ul>
@@ -107,12 +107,10 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
 
 	<!--Role Widgets-->
 
-	<section class="roles" id="roles">
-		<div class="rolesTitle">
-			<h2>Which widget best describes your role?</h2>
-		</div>
-		<div class="boxes">
-		<div class="box">
+<section class="roles" id="roles">
+	<h2>Which widget best describes your role?</h2>
+	<div class="boxes">
+	     <div class="box">
 			<h3><a href="https://ggfirenze.github.io/calculateyourCSAT2.0/csatpercentage5stars.html" id="og_csat_clicked">Tech Trainer - 5-star Eval.</a>
 			<script type="text/javascript">
 
@@ -127,12 +125,12 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
     }
           amplitude.track('og_csat_clicked', eventProperties);
     });
-  </script>
+</script>
 </h3>
-		</div>
-		<div class="box">
-			<h3><a href="https://ggfirenze.github.io/CSATsimplified/csatpercentage.html" id="simplified">Tech Trainer - 5-star Eval. Simplified</a>
-			<script type="text/javascript">
+</div>
+	<div class="box">
+		<h3><a href="https://ggfirenze.github.io/CSATsimplified/csatpercentage.html" id="simplified">Tech Trainer - 5-star Eval. Simplified</a>
+<script type="text/javascript">
 
  var simpCsat = document.getElementById('simplified');
 
@@ -145,12 +143,12 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
     }
           amplitude.track('simplified_csat_clicked', eventProperties);
     });
-  </script>
+</script>
 </h3>
-		</div>
-		<div class="box">
-			<h3><a href="https://ggfirenze.github.io/csat10stars/csat10stars.html" id="10stars">Tech Trainer - 10-star Eval.</a>
-						<script type="text/javascript">
+</div>
+	<div class="box">
+		<h3><a href="https://ggfirenze.github.io/csat10stars/csat10stars.html" id="10stars">Tech Trainer - 10-star Eval.</a>
+<script type="text/javascript">
 
  var tenCsat = document.getElementById('10stars');
 
@@ -163,13 +161,58 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
     }
           amplitude.track('10star_csat_clicked', eventProperties);
     });
-  </script>
+</script>
 </h3>
-		</div>
 	</div>
-	</section>
+</div>
+</section>
 
-	<!--33:50min video https://www.youtube.com/watch?v=oYRda7UtuhA -->
+ <!--ABOUT SECTION-->
+
+  <section class="about" id="about">
+      <h2>How did CalCSAT come to life?</h2>
+      <p>CalCSAT comes from the need of always being on top of our CSAT and creating solid reports every month, and every quarter.</p>
+      <p>At CalCSAT we are Technical Trainers with a vast amount of experience in the industry, we get you.</p>
+
+      <div class="row-about">
+        <div class="about-col">
+          <h3>Technical Trainers</h3>
+          <p>As Technical Trainers, we are always on calls with customers and partners. Enablement never rests and in order to be on top of deliverying great performances, asking for <strong>feedback</strong> is what we need. But how to meticulously calculate our CSAT every time we get to the end of a month or of a quarter? Sure enough, we can pull up our results, note down the grades we get, divide their sum by the maximum grade we could have achieved and multiply that number times 100. Look at that, we just spent a couple of minutes reading this, let alone doing it. Guess what? With CalCSAT you can let our solution handle all of that and in a matter of seconds you will know what your CSAT% looks like! We have 3 options available for you: one interface based on a 5-star evaluation system where you can keep track of how many 5 stars you got; a similar interface but simplified where you just need to type in the total score you got; as well as an interface based on a 10-star evaluation system that works similarly to the 5-star simplified option. Want to try? Click <a href="#roles" class="clickhere" id="clickhere">here</a>!<script type="text/javascript">
+
+ var clickHereStart = document.getElementById('clickhere');
+
+  clickHereStart.addEventListener('click', function(event) {
+
+  amplitude.getInstance().logEvent('click_here_to_start_selected', {debug: true})
+  var eventProperties = {
+      source : "homepage",
+      section: "about",
+      widget: "tech_trainers"
+    }
+          amplitude.track('click_here_to_start_selected', eventProperties);
+    });
+  </script></p>
+        </div>
+        <div class="about-col">
+          <h3>Project Managers</h3>
+          <p>Our experience in the sector working alongside Project Managers, Engagement Managers, Solutions Architects, and Partners taught us one thing: you also need support with your CSAT! That's right, there are various straightforward ways to define whether an implementation was successful or not. One of those is listening to what your customers have to say. Curious to know your quarterly or annual CSAT%? We are currently building an interface for you as well. Want to be added to the BETA group? Click <a href="https://ggfirenze.github.io/calculateyourcsat/homepage.html" id="clickherePMs">here</a> to let us know!<script type="text/javascript">
+
+ var clickHerePMs = document.getElementById('clickherePMs');
+
+  clickHerePMs.addEventListener('click', function(event) {
+
+  amplitude.getInstance().logEvent('click_here_PMs_beta', {debug: true})
+  var eventProperties = {
+      source : "homepage",
+      section: "about",
+      widget: "pms_beta"
+    }
+          amplitude.track('click_here_PMs_beta', eventProperties);
+    });
+</script>
+</p>
+    </div>
+</div>
 	
 <!--JavaScript for Toggle Menu-->
 
@@ -196,6 +239,20 @@ amplitude.init('54b017196da04bf7e947809fd2a8c275', {
       });
     }
   });
+
+document.querySelector('.clickhere').addEventListener('click', function(event) {
+      event.preventDefault();
+const targetId = this.getAttribute('href').substring(1); // Get the ID of the target section
+const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      const offsetTop = targetSection.offsetTop; // Get the top position of the target section
+      window.scroll({
+        top: offsetTop,
+        behavior: 'smooth' // Smooth scrolling behavior
+      });
+    }
+  });
+		
 	</script>
 </body>
 </html>
