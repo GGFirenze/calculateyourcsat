@@ -18,7 +18,8 @@
 .calculator {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(227, 249, 255, 0.85), rgba(227, 249, 255, 0.85)), url("/Users/giuliano.giannini/Desktop/CSAT 2.0/Ampacademy copy.png");
+    background-image: linear-gradient(rgba(227, 249, 255, 0.85), rgba(227, 249, 255, 0.85)), url("CalcSat Logo.png");
+    background-size: 250px 150px;
     justify-content: space-between;
     width: 60%;
     max-width: 800px;
