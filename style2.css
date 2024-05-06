@@ -18,7 +18,7 @@
 .calculator {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(rgba(227, 249, 255, 0.85), rgba(227, 249, 255, 0.85)), url("CalcSat Logo.png");
+    background-image: linear-gradient(rgba(227, 249, 255, 0.95), rgba(227, 249, 255, 0.95)), url("CalcSat Logo.png");
     background-size: 250px 150px;
     justify-content: space-between;
     width: 60%;
